@@ -1,8 +1,6 @@
 import math
 import socket
 import sys
-from tkinter import *
-from tkinter import simpledialog
 import pygame_menu
 import numpy as np
 import pygame
