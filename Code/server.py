@@ -4,7 +4,7 @@ import threading
 from logic import *
 
 PORT = 9999
-SERVER = socket.gethostbyname(socket.gethostname())
+SERVER = "127.0.0.1"
 ADDR = (SERVER, PORT)
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -42,7 +42,7 @@ def handle_game(conn1:socket, conn2:socket):
 
 def start():
     server.listen()
-    print(f"[LISTENING Server is listening on {SERVER}]")
+    print(f"[LISTENING Server is listening on IP {SERVER} and port {PORT} ]")
     while True:
         conn, addr = server.accept()
         print(f"Got connection from {addr}.")

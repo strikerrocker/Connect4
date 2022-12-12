@@ -184,7 +184,7 @@ def play():
 pygame.display.set_caption("Connect 4 Game")
 clientGUI = pygame_menu.Menu("Client Menu", size[0], size[1], theme=pygame_menu.themes.THEME_DARK)
 clientGUI.add.label("", label_id="label")
-clientGUI.add.text_input("IP to connect :", default="192.168.56.1", textinput_id="ip")
+clientGUI.add.text_input("IP to connect :", default="127.0.0.1", textinput_id="ip")
 clientGUI.add.text_input(
     "Port to connect :",
     default=9999,
